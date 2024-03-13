@@ -25,25 +25,45 @@ router.post('/', async (req, res) => {
         res.status(500).send("Internal Server Error");
     }
 });
-
-router.post('/check', async (req, res) => {
+router.post('/login', async (req, res) => {
     try {
         const { name, password } = req.body;
         const user = await lecturerModel.findOne({ name, password });
         if (user) {
-            res.status(200).send("Lecturer data added successfully!");
+            res.status(200).json("User exists"); // Send JSON response
         } else {
-            user = await userModel.findOne({ name, password })
-            const newLecturer = new lecturerModel(user);
-            await newLecturer.save();
-            res.status(200).send("Lecturer data added successfully!");
-
+            res.status(404).json({ error: "User not found" }); // Send JSON response
         }
     } catch (error) {
         console.error("Error checking user:", error);
         res.status(500).json({ error: "Internal Server Error" }); // Send JSON response
     }
-})
+});
+router.post('/check', async (req, res) => {
+    try {
+        const { name, password } = req.body;
+        const lecturer = await lecturerModel.findOne({ name, password });
+        if (lecturer) {
+            res.status(200).json(lecturer);
+        }
+        else {
+            const user = await userModel.findOne({ name, password });
+            console.log(user)
+            // If user found, create a new lecturer based on the user's data
+            if (user) {
+                const newLecturer = new lecturerModel(user);
+                await newLecturer.save();
+                res.status(200).json(newLecturer); // Return the newly created lecturer
+            } else {
+                res.status(404).json({ error: "Lecturer not found" }); // Send JSON response for lecturer not found
+            }
+        }
+
+    } catch (error) {
+        console.error("Error checking user:", error);
+        res.status(500).json({ error: "Internal Server Error" }); // Send JSON response
+    }
+});
 router.put('/:id', async (req, res) => {
     try {
         const lecturersId = req.params.id;

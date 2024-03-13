@@ -5,7 +5,8 @@ const lecturerSchema = new mongoose.Schema({
     name: String,
     address: String,
     mail: String,
-    password: String
+    password: String,
+    
 })
 
 const lecturerModel = mongoose.model("lecturers", lecturerSchema);
