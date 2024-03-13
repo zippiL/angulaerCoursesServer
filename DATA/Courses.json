@@ -1,0 +1,62 @@
+[
+  {
+
+    "nameCourse": "Development",
+    "kodeKategory": "65ed0a910e9b909572e5f1cb",
+    "amountLessons": 5,
+    "startCourseDate": "07/03/2024",
+    "syllabusArr": [
+      "lesson1",
+      "lesson2",
+      "lesson3"
+    ],
+    "wayLearning": 1,
+    "kodeLecture": "65f08fd569a01657226f49c6",
+    "image": "https://see-cyber.com/wp-content/uploads/2022/01/closeup-of-hands-working-on-computer-keyboard.jpg"
+  },
+  {
+
+    "nameCourse": "UI/UX",
+    "kodeKategory": "65ed0a910e9b909572e5f1ce",
+    "amountLessons": 5,
+    "startCourseDate": "07/03/2024",
+    "syllabusArr": [
+      "lesson1",
+      "lesson2",
+      "lesson3"
+    ],
+    "wayLearning": 2,
+    "kodeLecture": "65f08fd569a01657226f49c5",
+    "image": "https://www.6bstudio.co.il/wp-content/uploads/2023/07/UI-UX.png"
+  },
+  {
+
+    "nameCourse": "QA",
+    "kodeKategory": "65ed0a910e9b909572e5f1cd",
+    "amountLessons": 5,
+    "startCourseDate": "07/03/2024",
+    "syllabusArr": [
+      "lesson1",
+      "lesson2",
+      "lesson3"
+    ],
+    "wayLearning": 1,
+    "kodeLecture": "65f08fd569a01657226f49c5",
+    "image": "https://www.johnbryce.co.il/wp-content/uploads/2023/07/JB-COURSE-DESKTOP-1900x650_307.jpg"
+  },
+  {
+
+    "nameCourse": "Information security and cyber",
+    "kodeKategory": "65ed0a910e9b909572e5f1cc",
+    "amountLessons": 5,
+    "startCourseDate": "07/03/2024",
+    "syllabusArr": [
+      "lesson1",
+      "lesson2",
+      "lesson3"
+    ],
+    "wayLearning": 1,
+    "kodeLecture": "65f08fd569a01657226f49c6",
+    "image": "https://www.int-college.co.il/wp-content/uploads/2023/02/%D7%A7%D7%95%D7%A8%D7%A1-%D7%AA%D7%9B%D7%A0%D7%95%D7%AA-%D7%9C%D7%9E%D7%AA%D7%97%D7%99%D7%9C%D7%99%D7%9D-.jpg"
+  }
+]

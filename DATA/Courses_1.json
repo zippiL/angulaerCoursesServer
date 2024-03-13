@@ -1,0 +1,13 @@
+[
+  {
+    "kode": 1,
+    "nameCourse": "Algorithm",
+    "kodeKategory": 1,
+    "amountLessons": 5,
+    "startCourseDate": "07/03/2024",
+    "syllabusArr": [ "lesson1", "lesson2", "lesson3" ],
+    "wayLearning": "zoom",
+    "kodeLecture": 1,
+    "image": "https://mui.com/static/images/cards/contemplative-reptile.jpg"
+  }
+]
